@@ -1,0 +1,77 @@
+struct PersonName
+{
+    QString firstName;
+    QString lastName;
+};
+
+struct Sex
+{
+    QString sex_;
+    QString age;
+};
+
+struct Prefferences
+{
+    QString state;
+    QString orientation;
+};
+
+int main()
+{
+    PersonName pName;
+    Sex sex;
+    Prefferences preff;
+
+    QString str("|Pawel|Aksman|Facet|35|Maz|Hetero|");
+    QStringRef ref(&str);
+
+    QVector<QString> toName;
+    QVector<QString> toSex;
+    QVector<QString> toPreff;
+
+    int count = 0;
+
+    for(int i = 0; i < str.size(); ++i)
+    {
+        if(str[i] == '|' && i < str.size())
+        {
+            QString temp = str.mid(i + 1);
+
+            for(int j = 0; j < temp.size(); ++j)
+            {
+                if(temp[j] == '|')
+                {
+                    QString result = temp.mid(0, j);
+                    //qDebug() << result << '\n';
+
+                    ++count;
+
+                    if(count <= 2)
+                    {
+                        toName.push_back(result);
+                    }
+                    else if (count > 2 && count <= 4) {
+
+                        toSex.push_back(result);
+                    }
+                    else if (count > 4 && count <= 6) {
+
+                        toPreff.push_back(result);
+                    }
+
+
+                    break;
+                }
+            }
+        }
+    }
+
+    qDebug() << "Names: ";
+    for(auto x : toName) qDebug() << x << ", ";
+    qDebug() << "\nSex: ";
+    for(auto x : toSex) qDebug() << x << ", ";
+    qDebug() << "\nPreff: ";
+    for(auto x : toPreff) qDebug() << x << ", ";
+
+    return 0;
+}

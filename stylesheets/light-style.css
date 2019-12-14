@@ -1,0 +1,262 @@
+QMainWindow
+{
+	background-color: #BDBDBD;
+	border-color: rgb(58, 58, 58);
+}
+
+AlarmEditor
+{
+	background-color: #BDBDBD;
+}
+
+BackgroundOptionsDialog
+{
+	background-color: #BDBDBD;
+}
+
+PreviewWidget
+{
+	background-color: #BDBDBD;
+}
+
+QMenu
+{
+	background-color: #efefef;
+	border: 1px solid black;
+}
+
+QMenu::item
+{
+	border: 5px solid transparent;
+	color: #212121;
+}
+
+QMenu::item::selected
+{
+	background-color: #424242;
+	color: #e0e0e0;
+}
+
+QMenuBar
+{
+	background-color: #9E9E9E;
+	border: 1px solid #9E9E9E;
+	color: #212121;
+	spacing: 1px;
+}
+
+QMenuBar::item::selected
+{
+	background-color: #424242;
+	color: #e0e0e0;
+}
+
+QToolBar
+{
+	background: qlineargradient(x1:1, y1:0, x2:0, y2:1, stop: 0 #e0e0e0, stop: 0.5 #BDBDBD); /*#e0e0e0;*/
+}
+
+QToolButton
+{
+	color: #212121;
+}
+
+QToolButton::pressed
+{
+	background-color: #6876AF;
+}
+
+QPushButton
+{
+	border: 1px solid #424242;
+	border-radius: 5px;
+	background-color: qlineargradient(x1:1, y1:1, x2:1, y2:0, stop: 0 #373737, stop: 1 #8e8e8e);
+	color: #bdbdbd;
+}
+
+QPushButton::hover
+{
+	border: 1px solid #424242;
+	border-radius: 5px;
+	background-color: qlineargradient(x1:1, y1:1, x2:1, y2:0, stop: 0 #424242, stop: 1 #6d6d6d);
+}
+
+QPushButton::pressed
+{
+	border: 1px solid #424242;
+	border-radius: 5px;
+	background-color: qlineargradient(x1:1, y1:1, x2:1, y2:0, stop: 0 #1b1b1b, stop: 1 #373737);
+}
+
+QRadioButton
+{
+	padding: 2px;
+}
+
+QRadioButton::indicator::unchecked
+{
+	image: url(D:/Documents/Alarm_clock/icons/radio_unchecked.png);
+}
+
+QRadioButton::indicator::checked
+{
+	image: url(D:/Documents/Alarm_clock/icons/radio_checked.png);
+}
+
+QCheckBox
+{
+	padding: 2px;
+}
+
+QCheckBox::indicator::unchecked
+{
+	image: url(D:/Documents/Alarm_clock/icons/dark_check_box_blank.png);
+}
+
+QCheckBox::indicator::checked
+{
+	image: url(D:/Documents/Alarm_clock/icons/dark_check_box.png);
+}
+
+QSlider::groove:horizontal
+{
+	border: 1px solid black;
+	border-radius: 4px;
+	height: 6px;
+	background: #424242;
+}
+
+QSlider::groove:vertical
+{
+	background: red;
+}
+
+QSlider::handle:horizontal 
+{
+    background: #b4b4b4;
+    border: 1px solid #5c5c5c;
+	border-radius: 5px;
+    width: 15px;
+    margin: 0px; 
+}
+
+QTableWidget
+{
+	background-color: #e0e0e0;
+}
+
+QTableWidget QTableCornerButton::section
+{
+	background: #424242;
+}
+
+QTableWidget QHeaderView
+{
+	background: #424242;
+	border: 1px solid #606365;
+}
+
+QTableWidget QHeaderView::section
+{
+	background: #424242;
+	border: 1px solid transparent;
+	color: #e0e0e0;
+}
+
+QTableWidget::item
+{
+	border-bottom: 1px solid #9E9E9E;
+	color: #212121;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+}
+
+QTableWidget::item:focus
+{
+	background-color: #9E9E9E;
+	border-bottom : 1px solid #9E9E9E;
+	color: #212121;
+	margin-top: 1px;
+	margin-bottom: 1px;
+	margin-left: 1px;
+}
+
+QGroupBox
+{
+	border: 1px solid #424242;
+	border-radius: 5px;
+}
+
+QSpinBox
+{	
+	background-color: #e0e0e0;
+	border: 1px solid #424242;
+	border-radius: 5px;
+}
+
+QSpinBox::up-button
+{
+	subcontrol-origin: border;
+	subcontrol-position: top right;
+	border-image: url(D:/Documents/Alarm_clock/icons/black_arrow_up.png);
+}
+
+QSpinBox::down-button
+{
+	subcontrol-origin: border;
+	subcontrol-position: bottom right;
+	border-image: url(D:/Documents/Alarm_clock/icons/black_arrow_down.png);
+}
+
+QComboBox
+{
+	border: 1px solid #424242;
+	border-radius: 5px;
+	color: #424242;
+}
+
+QComboBox:editable
+{
+	color: #e0e0e0;
+}
+
+QComboBox:!editable, QComboBox::drop-down-editable
+{
+	background-color: #444648;
+}
+
+QComboBox:!editable:on, QComboBox::drop-down:editable:on 
+{
+	background-color: black;
+}
+
+QComboBox::drop-down
+{
+	border: 0px;
+}
+
+QComboBox QAbstractItemView
+{
+	border: 1px solid #424242;
+	border-radius: 5px;
+	background-color : #e0e0e0;
+	selection-background-color: #424242;
+}
+
+QComboBox::down-arrow
+{
+	image: url(D:/Documents/Alarm_clock/icons/black_arrow_down.png);
+}
+
+QTextEdit
+{
+	border: 1px solid black;
+	border-radius: 5px;
+	background: #9E9E9E;
+}
+
+
+
+
+

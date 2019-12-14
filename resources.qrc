@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>icons/play-button.png</file>
+        <file>icons/stop-button.png</file>
+        <file>icons/add.png</file>
+        <file>icons/remove.png</file>
+        <file>icons/edit.png</file>
+        <file>icons/clone.png</file>
+        <file>icons/open.png</file>
+        <file>icons/save.png</file>
+        <file>icons/exit.png</file>
+        <file>icons/alarm-clock.png</file>
+        <file>icons/open_file.png</file>
+        <file>icons/close_program.png</file>
+        <file>icons/add_alarm.png</file>
+        <file>icons/remove_alarm.png</file>
+        <file>icons/edit_alarm.png</file>
+        <file>icons/clone_alarm.png</file>
+        <file>icons/theme.png</file>
+        <file>icons/save_as.png</file>
+        <file>icons/save_file.png</file>
+        <file>icons/button_up.png</file>
+    </qresource>
+</RCC>
